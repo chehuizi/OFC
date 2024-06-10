@@ -9,7 +9,7 @@
   </parent>
 
   <artifactId>ofc-domain</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
 
   <name>ofc-domain</name>
   <url></url>

@@ -12,6 +12,10 @@
     <modules>
         <module>ofc-domain</module>
         <module>ofc-infrastructure</module>
+        <module>ofc-biz</module>
+        <module>ofc-api</module>
+        <module>ofc-api-impl</module>
+        <module>ofc-server</module>
     </modules>
 
     <properties>
