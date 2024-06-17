@@ -16,6 +16,7 @@
         <module>ofc-api</module>
         <module>ofc-api-impl</module>
         <module>ofc-server</module>
+        <module>ofc-common</module>
     </modules>
 
     <properties>
