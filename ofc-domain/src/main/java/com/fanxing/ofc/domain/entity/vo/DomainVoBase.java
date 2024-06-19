@@ -1,4 +1,4 @@
-package com.fanxing.ofc.domain.vo;
+package com.fanxing.ofc.domain.entity.vo;
 
 import java.io.Serializable;
 

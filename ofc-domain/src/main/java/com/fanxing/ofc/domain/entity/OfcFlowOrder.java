@@ -1,11 +1,13 @@
 package com.fanxing.ofc.domain.entity;
 
+import lombok.Builder;
 import lombok.Data;
 
 /**
  * 履约流程单据
  * @author chehuizi
  */
+@Builder
 @Data
 public class OfcFlowOrder extends DomainEntityBase {
 
