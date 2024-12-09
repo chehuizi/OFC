@@ -11,6 +11,8 @@ import lombok.Data;
 @Data
 public class OfcFlowOrder extends DomainEntityBase {
 
+
+
     /**
      * 履约流程单号
      */

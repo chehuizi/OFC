@@ -1,6 +1,5 @@
 package com.fanxing.ofc.domain.entity;
 
-import com.fanxing.ofc.domain.entity.vo.OfcFlowNodeConfig;
 import lombok.Builder;
 import lombok.Data;
 

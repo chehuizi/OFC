@@ -10,7 +10,7 @@ import java.util.Date;
  * @author chehuizi
  */
 @Data
-public class DomainEntityBase implements Serializable{
+public class DomainEntityBase implements Serializable {
 
     private static final long serialVersionUID = 2417165205000251911L;
 
