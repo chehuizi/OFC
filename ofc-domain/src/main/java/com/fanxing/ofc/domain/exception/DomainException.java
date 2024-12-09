@@ -1,6 +1,6 @@
 package com.fanxing.ofc.domain.exception;
 
-import com.fanxing.ofc.domain.enums.DomainErrorEnum;
+import com.fanxing.ofc.domain.enums.DomainExpCodeEnum;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -21,9 +21,9 @@ public class DomainException extends RuntimeException {
      */
     private String  errMsg;
 
-    public DomainException(DomainErrorEnum domainErrorEnum, Exception ex) {
+    public DomainException(DomainExpCodeEnum domainExpCodeEnum, Exception ex) {
         super(ex);
-        this.setErrCode(domainErrorEnum.getErrCode());
-        this.setErrMsg(domainErrorEnum.getErrMsg());
+        this.setErrCode(domainExpCodeEnum.getErrCode());
+        this.setErrMsg(domainExpCodeEnum.getErrMsg());
     }
 }

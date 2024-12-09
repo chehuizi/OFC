@@ -1,7 +1,7 @@
 package com.fanxing.ofc.infrastructure.repository.impl;
 
 import com.fanxing.ofc.domain.entity.DomainEntityBase;
-import com.fanxing.ofc.domain.enums.DomainErrorEnum;
+import com.fanxing.ofc.domain.enums.DomainExpCodeEnum;
 import com.fanxing.ofc.domain.exception.DomainException;
 import com.fanxing.ofc.domain.repository.DomainEntityRepository;
 import com.fanxing.ofc.domain.repository.param.DomainEntityQueryParamBase;
@@ -18,7 +18,7 @@ public abstract class DomainEntityRepositoryImplBase<T extends DomainEntityBase,
         try {
             return createImpl(t);
         } catch (Exception ex) {
-            throw new DomainException(DomainErrorEnum.REPOSITORY_CREATE_ERROR, ex);
+            throw new DomainException(DomainExpCodeEnum.REPOSITORY_CREATE_ERROR, ex);
         }
     }
 
@@ -29,7 +29,7 @@ public abstract class DomainEntityRepositoryImplBase<T extends DomainEntityBase,
         try {
             return updateImpl(t);
         } catch (Exception ex) {
-            throw new DomainException(DomainErrorEnum.REPOSITORY_UPDATE_ERROR, ex);
+            throw new DomainException(DomainExpCodeEnum.REPOSITORY_UPDATE_ERROR, ex);
         }
     }
 
@@ -40,7 +40,7 @@ public abstract class DomainEntityRepositoryImplBase<T extends DomainEntityBase,
         try {
             return deleteImpl(t);
         } catch (Exception ex) {
-            throw new DomainException(DomainErrorEnum.REPOSITORY_DELETE_ERROR, ex);
+            throw new DomainException(DomainExpCodeEnum.REPOSITORY_DELETE_ERROR, ex);
         }
     }
 
@@ -51,7 +51,7 @@ public abstract class DomainEntityRepositoryImplBase<T extends DomainEntityBase,
         try {
             return selectOneImpl(r);
         } catch (Exception ex) {
-            throw new DomainException(DomainErrorEnum.REPOSITORY_DELETE_ERROR, ex);
+            throw new DomainException(DomainExpCodeEnum.REPOSITORY_DELETE_ERROR, ex);
         }
     }
 
@@ -62,7 +62,7 @@ public abstract class DomainEntityRepositoryImplBase<T extends DomainEntityBase,
         try {
             return selectListImpl(r);
         } catch (Exception ex) {
-            throw new DomainException(DomainErrorEnum.REPOSITORY_DELETE_ERROR, ex);
+            throw new DomainException(DomainExpCodeEnum.REPOSITORY_DELETE_ERROR, ex);
         }
     }
 

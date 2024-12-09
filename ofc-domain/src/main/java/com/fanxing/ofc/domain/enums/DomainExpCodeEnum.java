@@ -9,7 +9,7 @@ import lombok.Getter;
  */
 @AllArgsConstructor
 @Getter
-public enum DomainErrorEnum {
+public enum DomainExpCodeEnum {
     REPOSITORY_CREATE_ERROR(800001, "创建失败"),
     REPOSITORY_UPDATE_ERROR(800002, "更新失败"),
     REPOSITORY_DELETE_ERROR(800003, "删除失败"),
