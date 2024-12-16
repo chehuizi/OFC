@@ -13,6 +13,7 @@ import java.util.List;
  */
 public abstract class DomainEntityRepositoryImplBase<T extends DomainEntityBase, R extends DomainEntityQueryParamBase>
         implements DomainEntityRepository<T, R> {
+
     @Override
     public Boolean create(T t) throws DomainException {
         try {
@@ -51,7 +52,7 @@ public abstract class DomainEntityRepositoryImplBase<T extends DomainEntityBase,
         try {
             return selectOneImpl(r);
         } catch (Exception ex) {
-            throw new DomainException(DomainExpCodeEnum.REPOSITORY_DELETE_ERROR, ex);
+            throw new DomainException(DomainExpCodeEnum.REPOSITORY_SELECT_ERROR, ex);
         }
     }
 
@@ -62,7 +63,7 @@ public abstract class DomainEntityRepositoryImplBase<T extends DomainEntityBase,
         try {
             return selectListImpl(r);
         } catch (Exception ex) {
-            throw new DomainException(DomainExpCodeEnum.REPOSITORY_DELETE_ERROR, ex);
+            throw new DomainException(DomainExpCodeEnum.REPOSITORY_SELECT_ERROR, ex);
         }
     }
 

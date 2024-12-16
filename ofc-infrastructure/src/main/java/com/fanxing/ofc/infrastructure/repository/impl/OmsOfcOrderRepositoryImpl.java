@@ -6,8 +6,11 @@ import com.fanxing.ofc.domain.repository.param.OmsOfcOrderQueryParam;
 
 import java.util.List;
 
+
 public class OmsOfcOrderRepositoryImpl extends DomainEntityRepositoryImplBase<OmsOfcOrder, OmsOfcOrderQueryParam>
     implements OmsOfcOrderRepository {
+
+
 
     @Override
     public Boolean createImpl(OmsOfcOrder omsOfcOrder) {
